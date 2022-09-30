@@ -1,0 +1,187 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>Netflix</title>
+<style>
+h4{background-color:#383838;padding:16px;align-text:center;width:40%;
+color:white;margin-top:8px;display:block;}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+ opacity:0.8;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 38px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: red;
+}
+</style>
+<script>
+function showHint(str) {
+  if (str.length == 0) {
+    document.getElementById("txtHint").innerHTML = "";
+    return;
+  } else {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("txtHint").innerHTML = this.responseText;
+      }
+    };
+    xmlhttp.open("GET", "gethint.php?q=" + str, true);
+    xmlhttp.send();
+  }
+}
+
+function myFunction() {
+var fnum=document.getElementById("fname").value;
+if(fnum=="monishkumar4050@gamil.com"){
+document.write("Hii Monish Your login is Successful");
+}
+else{
+document.write("Incorrect Credentials");
+}
+}
+</script>
+</head>
+<body style="background-color:black;">
+<div style="background-image:url(bg2.jpg);"
+<br/>
+<ul>
+  <font size="5" face="Sans-serif"><li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">New Releases</a></li>
+  <li><a href="#contact">Blockbusters</a></li>
+  <li><a href="#about">Contact</a></li>
+<li><a href="#about">About</a></li>
+ <li style="float:right"><a class="active" href="#about">Sign in</a></li></font>
+</ul>
+<img src="net.jpg">
+<font color="white" size="7"face="Sans-serif"><h1><center>Unlimited movies,TV <br/>shows and more.</center></h1></font>
+<font color="white" size="6"face="Sans-serif"><center><h2>Watch anywhere.Cancel anytime.</h2></center></font>
+<font color="white" size="5"face="Sans-serif"><h3><center>Ready to watch?Enter the email to create or restart your membership.</center></h3></font>
+<center><input type="text"id="fname"value="Search Movies"onkeyup="showHint(this.value)"style="height:72px;width:540px;font-size:20pt;">
+<button onclick="myFunction()"style="height:72px;width:191px;font-size:20pt;color:white;background-color:red;">Get Started </button></center>
+<b><p style="font-size: 250%; color: rgb(243, 6, 6);margin-left:300px ;font-family:Sans-serif;">Suggestions : <span id="txtHint"></span></p></b>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+</div>
+<font size="1"color="#282828"><p style="background-color:#282828;">dg</p></font>
+<br/>
+<br/>
+<center><img src="intro.gif"width="800"height="400"style="float:right;"></center>
+<br/>
+<br/>
+<center><h1><font color="white"size="10"face="Sans-serif"><b>Enjoy on your TV.</b></font></h1>
+<h2><font color="white" size="6"face="Sans-serif">Watch on smart TVs,Playstation,Xbox,<br/>Chromecast,Apple TV,Blu-ray player and<br/>more.</h2></center>
+</br>
+</br>
+<br/>
+<br/>
+<font size="1"color="#282828"><p style="background-color:#282828;">dg</p></font>
+<br/>
+<br/>
+<center><p style="float:left;margin-left:100px;"><video autoplay="autoplay" data-object-fit="cover" data-object-position="center center" loop="loop" muted="muted" playsinline="playsinline">
+  <source src="net.mp4" type="video/mp4"></video></p></center>
+<br/>
+<center><h1><font color="white" size="10"face="Sans-serif">Download to watch offline.</font><h1>
+<font color="white" size="6"face="Sans-serif">Save your favourites easily and <br/>always have something to watch.</font></center>
+<br/>
+<br/>
+<br/>
+<br/>
+<font size="1"color="#282828"><p style="background-color:#282828;">dg</p></font>
+<center><img src="strange.gif"height="400"width="700"style="float:right;"></center>
+<br/>
+<br/>
+<br/>
+<center><h1><font color="white"size="10"face="Sans-serif">Watch everywhere</font><h1>
+<font color="white"size="6"face="Sans-serif">Stream unlimited movies and TV shows on <br/> your phone,tablet,laptops,and TV.</font></center>
+<br/>
+<br/>
+<br/>
+<br/>
+<font size="1"color="#282828"><p style="background-color:#282828;">dg</p></font>
+<br/>
+<center><img src="child.jpg"height="400"width="700"style="float:left;"></center>
+<center><h1><font color="white" size="10"face="Sans-serif">Create profiles for children.</font><h1>
+<font color="white" size="6"face="Sans-serif">Send childern on advenrures with their favourite <br/>characters in a space made just for them-free<br/> with your membership.</font></center>
+</br>
+</br>
+<br/>
+<br/>
+<font size="1"color="#282828"><p style="background-color:#282828;">dg</p></font>
+<br/>
+<center><video autoplay="autoplay" data-object-fit="cover" data-object-position="center center" loop="loop" muted="muted" playsinline="playsinline">
+<source src="movie.mp4" type="video/mp4"></center>
+</video>
+<br/>
+<font size="1"color="#282828"><p style="background-color:#282828;">dg</p></font>
+<br/>
+<center><font color="white"size="7"face="Sans-serif"><b>Our lastest movies:</br></font></center>
+<br/>
+<center><table width="1200">
+<tr>
+<td><img src="p1.jpg"></td>
+<td><img src="p2.jpg"></td>
+<td><img src="p3.jpg"></td>
+<td><img src="p4.jpg"></td>
+<td><img src="p5.jpg"></td>
+</tr>
+<tr>
+<td><img src="p6.jpg"></td>
+<td><img src="p7.jpg"></td>
+<td><img src="p8.jpg"></td>
+<td><img src="p9.jpg"></td>
+<td><img src="p10.jpg"></td>
+<tr>
+<td><img src="p16.jpg"></td>
+<td><img src="p17.jpg"></td>
+<td><img src="p18.jpg"></td>
+<td><img src="p19.jpg"></td>
+<td><img src="p20.jpg"></td>
+</tr>
+<tr>
+<td><img src="p11.jpg"></td>
+<td><img src="p12.jpg"></td>
+<td><img src="p13.jpg"></td>
+<td><img src="p14.jpg"></td>
+<td><img src="p15.jpg"></td>
+</tr>
+</table>
+<font size="1"color="#282828"><p style="background-color:#282828;">dg</p></font>
+<center><h1>Frequently asked questions</h1></center>
+<h4 >What is Netflix?<h2>
+<h4>How much does Netflix cost?<h2>
+<h4>Where can i watch?<h2>
+<h4>How do i cancel?<h2>
+<h4>What can i watch on Netflix?</h4>
+<h4>Is Netflix Good for kids?</h4>
+<center><p font size="1">Ready to watch? Enter your email to create or restart your membership.</p></center>
+<center><input type="text"id="fname"value="Email Address"onkeyup="showHint(this.value)"style="height:72px;width:540px;font-size:20pt;">
+<button onclick="myFunction()"style="height:72px;width:191px;font-size:20pt;color:white;background-color:red;">Get Started </button></center>
+</body>
+</html>
+
